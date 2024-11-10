@@ -146,7 +146,11 @@ const Register = () => {
             className="grow"
             placeholder="Password"
           />
-          <button onClick={() => setShowPass(!showPass)} className="btn btn-xs">
+          <button
+            type="button"
+            onClick={() => setShowPass(!showPass)}
+            className="btn btn-xs"
+          >
             {showPass ? <FaEye /> : <FaEyeSlash />}
           </button>
         </label>
